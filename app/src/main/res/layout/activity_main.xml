@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_landing"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:contentDescription="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-300dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Browse properties\n development\n opportunities and\n start saving "
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_get_started"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="9dp"
+                android:background="#4a8cff"
+                android:gravity="center"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                app:cornerRadius="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Already have an account?"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/sign_in"
+                    android:paddingLeft="2dp"
+                    android:text="Sign In"
+                    android:textColor="#4a8cff"
+                    android:textSize="15sp" />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Investors &amp; Lenders"
+                    android:textColor="#000000"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="What types of development are you interested in?"
+                android:textSize="16sp" />
+
+
+            <ImageView
+
+                android:id="@+id/commercial"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/commercial" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_landing"
+                android:layout_gravity="center"
+                android:layout_marginTop="-155dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Commericials"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+
+            <ImageView
+                android:id="@+id/residental"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/residental" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_landing"
+                android:layout_gravity="center"
+                android:layout_marginTop="-155dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Residental"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+
+            <ImageView
+                android:id="@+id/off_sales"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/off_plan_sales" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_landing"
+                android:layout_gravity="center"
+                android:layout_marginTop="-155dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Off Plan Sales"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+
+            <ImageView
+                android:id="@+id/land"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/land" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_landing"
+                android:layout_gravity="center"
+                android:layout_marginTop="-155dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Land"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
